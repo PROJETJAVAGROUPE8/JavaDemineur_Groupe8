@@ -24,7 +24,7 @@ public class Demineur
   JCheckBoxMenuItem menuDebutant = new JCheckBoxMenuItem("Débutant");
   JCheckBoxMenuItem menuIntermediaire = new JCheckBoxMenuItem("Intermédiaire");
   JCheckBoxMenuItem menuExpert = new JCheckBoxMenuItem("Expert");
-  JCheckBoxMenuItem menuPerso = new JCheckBoxMenuItem("Personalisé");
+
   private JMenuItem apropos = new JMenuItem("A propos");
   private BoxLayout layoutPanneauHaut = new BoxLayout(panneauHaut,
       BoxLayout.LINE_AXIS);
@@ -60,16 +60,7 @@ public class Demineur
     TYPE = type;
     jeux = new DéminCase[HAUTEUR][LARGEUR];
 
-    //Récupérer les gif dans le fichier .jar
     URL location;
-    //location = java.lang.ClassLoader.getSystemResource("src/cool.gif");
-   // cool = new ImageIcon(location);
-    //location = java.lang.ClassLoader.getSystemResource("src/oups.gif");
-    ////oups = new ImageIcon(location);
-   // location = java.lang.ClassLoader.getSystemResource("src/boum.gif");
-   // boum = new ImageIcon(location);
-    //location = java.lang.ClassLoader.getSystemResource("src/win.gif");
-   // win = new ImageIcon(location);
 
     //création des cases
     for (int i = 0; i < HAUTEUR; i++) {
